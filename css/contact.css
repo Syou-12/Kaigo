@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/*-- フォーム --*/
+
+h1 {
+    margin-top: 80px;
+    margin-bottom: 150px;
+    font-size: 72px;
+    text-align: center
+}
+
+form div {
+    margin-bottom: 14px;
+}
+
+label {
+    font-size: 36px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+input[type="email"] {
+    width: 50%;
+    margin-left: 50px
+}
+
+input[type="text"] {
+    margin-left: 175px;
+    width: 40%;
+    margin-left: 145px;
+
+}
+
+textarea {
+    width: 80%;
+    height: 385px;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+}
+
+#message {
+    border: 1px solid #000;
+    margin-left: 200px;
+}
+
+.name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+}
+
+.name label {
+    margin-left: 150px;
+    
+
+}
+
+.email {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 65px;
+    margin-bottom: 90px;
+}
+
+.message label {
+    margin-left: 200px;
+}
+
+.btn {
+    font-size: 48px;
+    max-width: 400px;
+    border: 1px solid #000;
+    padding: 5px 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 60px;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}

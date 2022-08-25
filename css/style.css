@@ -1,0 +1,450 @@
+@charset "utf-8";
+
+/*-- ヘッダー --*/
+
+#header {
+    background-image: url(../img/mv.jpg);
+    background-size: cover;
+    height: 1131px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 130px;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+.list ul {
+    display: flex;
+}
+
+.list li {
+    list-style: none;
+    margin: 20px;
+    font-size: 48px;
+}
+
+.list li:hover {
+    opacity: 0.5;
+}
+
+/*-- 施設一覧　--*/
+
+.title {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    font-size: 60px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro img {
+    width: 550px;
+    height: 550px;
+
+}
+
+.intro h3 {
+    font-size: 48px;
+}
+
+.warpper {
+    text-align: center;
+}
+
+.day img:hover {
+    opacity: 0.5;
+}
+
+.home img:hover {
+    opacity: 0.5;
+}
+
+.rental img:hover {
+    opacity: 0.5;
+}
+
+/*-- 職員の声 --*/
+
+.face {
+    display: flex;
+    align-items: center;
+    margin-left: 118px;
+    margin-top: 120px;
+}
+
+.name {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+    width: 1013px;
+    height: 247px;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+/*-- お知らせ --*/
+
+#news ul li {
+    border-bottom: 1px solid #000;
+    padding: 30px 0;
+    list-style-type: none;
+}
+
+#news ul {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.news-list {
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.news-list .news-item a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.category {
+    border: 1px solid aqua;
+    border-radius: 30px;
+    padding: 5px 15px;
+    background-color: aqua;
+}
+
+.news-title {
+    margin-left: 50px;
+}
+
+.category {
+    font-size: 25px;
+    margin-left: 95px;
+}
+
+.news-btn {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 30px;
+    display: block;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 30px;
+}
+
+/*-- フッター --*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 430px;
+    margin-bottom: 100px;
+}
+
+.footer-list li {
+    font-size: 30px;
+    list-style-type: none;
+    margin: 20px;
+}
+
+.footer-list li:hover {
+    opacity: 0.5;
+}
+
+.footer-list ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.footer h2 {
+    font-size: 48px;
+    margin-left: 130px;
+}
+
+.copy {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+ #header {
+    background-image: url(../img/mv.jpg);
+    max-width: 100%;
+    height: 300px;
+    background-size: contain;
+ }
+
+ .logo {
+    margin-left: 20px;
+ }
+
+ h1 {
+    font-size: 30px;
+ }
+
+ .list li {
+    font-size: 20px;
+ }
+ .list ul {
+    display: block;
+    padding-top: 300px;
+ }
+ 
+ button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: middle;
+    margin-left: 170px;
+
+}
+
+/*ハンバーガーボタン*/
+.bg-btn {
+    display: block;
+    width: 230px;
+    height: 100px;
+    position: fixed;
+    z-index: 30;
+    border: none;
+    background-color: transparent;
+    margin-top: -70px;
+}
+
+.bar {
+    width: 30px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 65%;
+    transform: translateX(-50%);
+    background-color: #000;
+}
+
+.bar-top {
+    top: 40px;
+}
+
+.bar-mid {
+    top: 60px;
+}
+
+.nar-bottom {
+    bottom: 40px;
+}
+
+.bg-btn.close .bar-top {
+    transform: translate(-40%, 5px) rotate(45deg);
+    transition: transform .3s;
+}
+
+.bg-btn.close .bar-mid {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.bg-btn.close .bar-bottom {
+    transform: translate(-40%, -5px) rotate(-45deg);
+    transition: transform .3s;
+}
+
+.btn {
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform .3s;
+    width: 100vw;
+    z-index: 30;
+}
+
+.list {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 30;
+}
+
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.item {
+    margin-right: 0;
+    margin-bottom: 40px;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.btn.slide-in {
+    transform: translateX(0);
+}
+
+.list .navi ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 260px;
+
+}
+
+.title {
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+.intro {
+    display: block;
+}
+
+.slide-list {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .slide-item {
+    margin: 0 5px;
+  }
+  
+  .slide-item h3 {
+    font-size: 18px;
+  }
+
+  .slide-item img {
+    height: 350px;
+    width: 100%;
+  }
+
+#voice, .title {
+    margin-bottom: 60px;
+}
+
+  .face {
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 80px;
+    
+  }
+
+  .face img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .name, .text, p span{
+    font-size: 18px;
+    border: none;
+    display: block;
+  }
+
+  .text {
+    margin-left: 160px;
+    margin-top: -150px;
+    border: 1px solid #000;
+    width: 200px;
+    height: auto;
+    padding: 30px 10px;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  #news ul li {
+    max-width: 100%;
+    padding: 5px 0;
+  }
+
+  .news-list, .category {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  .news-title {
+    margin-left: 5px;
+  }
+
+  .news-btn {
+    max-width: 150px;
+    font-size: 18px;
+  }
+
+  .footer {
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+
+  .footer h2 {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-bottom: -20px;
+  }
+
+  .footer-list li {
+    font-size: 5px;
+    margin: 0 5px;
+  }
+
+  .footer-list ul {
+    margin-left:40px;
+    margin-right: 10px;
+    justify-content: flex-end;
+  }
+
+  .copy {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
