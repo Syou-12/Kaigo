@@ -7,19 +7,29 @@
     <title>NEWS</title>
     <link rel="stylesheet" href="./css/nwes.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./js/btn.js"></script>
 </head>
 <body>
     <header id="header">
         <div class="top">
             <h1 class="logo">ロゴ</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">施設一覧</a></li>
-                    <li><a href="#">職員の声</a></li>
-                    <li><a href="#">お知らせ</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
-                </ul>
-            </nav>
+            <div class="btn">
+                <nav class="list">
+                    <ul class="nav-list">
+                        <li class="item"><a href="#institution">施設一覧</a></li>
+                        <li class="item"><a href="#voice">職員の声</a></li>
+                        <li class="item"><a href="#news">お知らせ</a></li>
+                        <li class="item"><a href="./contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--ハンバーガーボタン-->
+            <button class="bg-btn">
+                <span class="bar bar-top"></span>
+                <span class="bar bar-mid"></span>
+                <span class="bar bar-bottom"></span>
+            </button>
         </div>
         <div class="title">
             <h2>お知らせ</h2>
@@ -64,7 +74,7 @@
                 </a>
             </li>
         </ul>
-        <a class="btn" href="#">お問い合わせ</a>
+        <a class=" news-btn" href="#">お問い合わせ</a>
     </section>
     </main>
     <footer>

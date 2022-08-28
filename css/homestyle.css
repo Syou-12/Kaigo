@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+header {
+    background: #eeeeee;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -17,8 +21,8 @@ li {
 }
 
 .top h1 {
-    margin-left: 125px;
-    font-size: 60px;
+    margin-left: 50px;
+    font-size: 36px;
 }
 
 .top ul {
@@ -27,7 +31,7 @@ li {
 
 .top li {
     margin: 15px;
-    font-size: 30px;
+    font-size: 16px;
 }
 
 .top li:hover {
@@ -45,11 +49,11 @@ li {
 .mv h2 {
     padding-top: 320px;
     margin-left: 105px;
-    font-size: 60px;
+    font-size: 36px;
 }
 
 .title {
-    font-size: 60px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -62,7 +66,7 @@ li {
     border-radius: 30px;
     margin: 0 auto;
     text-align: center;
-    font-size: 48px;
+    font-size: 16px;
     padding: 50px;
 }
 
@@ -91,7 +95,7 @@ li {
 
 .news-list {
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -112,14 +116,14 @@ li {
 }
 
 .category {
-    font-size: 25px;
+    font-size: 16px;
     margin-left: 95px;
 }
 
-.btn {
+.news-btn {
     max-width: 300px;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 16px;
     display: block;
     padding: 5px 15px;
     text-align: center;
@@ -137,36 +141,57 @@ li {
 
 .face {
     display: flex;
-    justify-content: center;
-    margin-left: 118px;
+    justify-content: flex-start;
     align-items: center;
 }
 
+.face img {
+    width: 250px;
+    height: 250px;
+}
+
 .name {
-    font-size: 36px;
+    font-size: 16px;
     margin-bottom: 20px;
     margin-left: 10px;
 }
 
 .text {
-    font-size: 48px;
+    font-size: 16px;
     border: 1px solid #000;
-    border-radius: 50px;
-    padding: 20px 300px;
+    border-radius: 30px;
+    padding: 30px 200px;
 }
 
 /*-- よくある質問 --*/
+
+#qa {
+    padding: 60px 0;
+    margin-bottom: 120px;
+    background: url(../img/bg.png);
+    animation: fall 10s infinite linear;
+}
+
+@keyframes fall {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -700px 700px;
+    }
+}
 
 .item-left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: -100px;
+    margin-bottom: -70px;
 }
 
 .item-left img {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
 }
 
 .text-a {
@@ -178,7 +203,7 @@ li {
     display: flex;
     justify-content: center;
     margin-left: 15px;
-    font-size: 48px;
+    font-size: 16px;
     padding: 45px 60px;
 }
 
@@ -199,8 +224,8 @@ li {
 }
 
 .item-right img {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
 }
 
 .text-b {
@@ -212,7 +237,7 @@ li {
     display: flex;
     justify-content: center;
     margin-right: 25px;
-    font-size: 48px;
+    font-size: 16px;
     padding: 45px 60px;
 }
 
@@ -229,7 +254,7 @@ li {
 .in-btn {
     max-width: 350px;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 16px;
     display: block;
     padding: 20px 40px;
     text-align: center;
@@ -249,6 +274,10 @@ li {
 
 /*-- フッター --*/
 
+footer {
+    background: #eeeeee;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -257,7 +286,7 @@ li {
 }
 
 .footer-list li {
-    font-size: 30px;
+    font-size: 16px;
     list-style-type: none;
     margin: 20px;
 }
@@ -273,10 +302,258 @@ li {
 }
 
 .footer h2 {
-    font-size: 48px;
+    font-size: 36px;
     margin-left: 130px;
 }
 
 .copy {
     text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+
+    .top h1 {
+        margin-left: 10%;
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        color: inherit;
+        cursor: pointer;
+        font: inherit;
+        margin: 0;
+        outline: none;
+        padding: 0;
+        vertical-align: middle;
+        margin-left: 170px;
+    
+    }
+    
+    /*ハンバーガーボタン*/
+    .bg-btn {
+        display: block;
+        width: 70%;
+        height: 100px;
+        position: fixed;
+        z-index: 30;
+        border: none;
+        background-color: transparent;
+        margin-top: -80px;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        left: 65%;
+        transform: translateX(-50%);
+        background-color: #000;
+    }
+    
+    .bar-top {
+        top: 40px;
+    }
+    
+    .bar-mid {
+        top: 60px;
+    }
+    
+    .nar-bottom {
+        bottom: 40px;
+    }
+    
+    .bg-btn.close .bar-top {
+        transform: translate(-40%, 5px) rotate(45deg);
+        transition: transform .3s;
+    }
+    
+    .bg-btn.close .bar-mid {
+        opacity: 0;
+        transition: opacity .3s;
+    }
+    
+    .bg-btn.close .bar-bottom {
+        transform: translate(-40%, -5px) rotate(-45deg);
+        transition: transform .3s;
+    }
+    
+    .btn {
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        transform: translateX(100%);
+        transition: transform .3s;
+        width: 100vw;
+        z-index: 30;
+    }
+    
+    .list {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 30;
+    }
+    
+    
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin-top: 200px;
+    }
+    
+    .item {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    .noscroll {
+        overflow: hidden;
+    }
+    
+    .btn.slide-in {
+        transform: translateX(0);
+    }
+    
+   .mv {
+    background-image: url(../img/saito2.png);
+    background-size: cover;
+    max-width: 100%;
+    height: 150px;
+    align-items: center;
+   }
+
+   .mv h2 {
+    padding-top: 20%;
+    margin-left: 15%;
+   }
+
+   .overview-text {
+    max-width: 80%;
+    padding: 30px 20px;
+   }
+
+   #news ul li {
+    max-width: 100%;
+    padding: 5px 0;
+  }
+
+  .news-list, .category {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  .news-title {
+    margin-left: 5px;
+  }
+
+  .news-btn {
+    max-width: 150px;
+    font-size: 18px;
+  }
+
+  .face {
+    margin: 0 auto;
+    padding-bottom: 80px;
+    
+  }
+
+  .face img {
+    width: 30%;
+    height: 30%;
+  }
+
+  .text {
+    padding:30px 50px;
+  }
+
+  .name {
+    margin: 0 auto;
+  }
+
+  .item-left img{
+    width: 30%;
+    height: 30%;
+  }
+
+  .item-right img {
+    width: 30%;
+    height: 30%;
+  }
+
+  .item-left {
+    margin: 0 auto;
+  }
+
+  .item-right {
+    margin-left: 20px;
+  }
+
+  .text-a {
+    padding: 10px 20px;
+  }
+
+  .text-a::before {
+    border: 10px solid transparent;
+    border-right: 30px solid #e9f1fb;
+    margin-left: -30px;
+  }
+
+  .text-b {
+    padding: 10px 20px;
+  }
+
+  .text-b::before {
+    border: 10px solid transparent;
+    border-left: 30px solid #e9f1fb;
+    margin-right: -30px;
+  }
+
+  .in-btn {
+    max-width: 50%;
+  }
+
+  .footer {
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+
+  .footer h2 {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-bottom: -20px;
+  }
+
+  .footer-list li {
+    font-size: 5px;
+    margin: 0 5px;
+  }
+
+  .footer-list ul {
+    margin-left:40px;
+    margin-right: 10px;
+    justify-content: flex-end;
+  }
+
+  .copy {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }

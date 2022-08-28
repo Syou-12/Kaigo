@@ -1,7 +1,7 @@
 $(function(){
 	function sliderSetting(){
 	    var width = $(window).width();
-	    if(width <= 800){
+	    if(width <= 767){
 	        $('.intro').not('.slick-initialized').slick({
 	            autoplay: true,
 	            centerMode: false,

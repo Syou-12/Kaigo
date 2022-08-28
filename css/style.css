@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /*-- ヘッダー --*/
 
 #header {
@@ -27,7 +28,7 @@ li {
 }
 
 h1 {
-    font-size: 72px;
+    font-size: 36px;
 }
 
 .list ul {
@@ -37,20 +38,30 @@ h1 {
 .list li {
     list-style: none;
     margin: 20px;
-    font-size: 48px;
+    font-size: 16px;
 }
 
 .list li:hover {
     opacity: 0.5;
 }
 
+.list {
+    z-index: 1;
+}
+
 /*-- 施設一覧　--*/
+
+#institution {
+    background: #ccffcc;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
 
 .title {
     text-align: center;
     margin-top: 70px;
     margin-bottom: 60px;
-    font-size: 60px;
+    font-size: 36px;
 }
 
 .intro {
@@ -60,13 +71,13 @@ h1 {
 }
 
 .intro img {
-    width: 550px;
-    height: 550px;
+    width: 450px;
+    height: 450px;
 
 }
 
 .intro h3 {
-    font-size: 48px;
+    font-size: 16px;
 }
 
 .warpper {
@@ -87,15 +98,25 @@ h1 {
 
 /*-- 職員の声 --*/
 
+#voice {
+    background: #ccffff;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
 .face {
     display: flex;
     align-items: center;
-    margin-left: 118px;
     margin-top: 120px;
 }
 
+.face img {
+    height: 350px;
+    width: 350px;
+}
+
 .name {
-    font-size: 36px;
+    font-size: 16px;
     margin-bottom: 20px;
     margin-left: 10px;
 }
@@ -104,11 +125,12 @@ h1 {
     display: flex;
     justify-content: center;
     border: 1px solid #000;
-    width: 1013px;
+    background-color: #fff;
+    width: 800px;
     height: 247px;
     align-items: center;
     border-radius: 30px;
-    font-size: 30px;
+    font-size: 16px;
 }
 
 /*-- お知らせ --*/
@@ -127,7 +149,7 @@ h1 {
 
 .news-list {
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -148,7 +170,7 @@ h1 {
 }
 
 .category {
-    font-size: 25px;
+    font-size: 16px;
     margin-left: 95px;
 }
 
@@ -166,16 +188,19 @@ h1 {
 }
 
 /*-- フッター --*/
+footer {
+    background: #eeeeee;
+}
 
 .footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 430px;
+    margin-top: 200px;
     margin-bottom: 100px;
 }
 
 .footer-list li {
-    font-size: 30px;
+    font-size: 16px;
     list-style-type: none;
     margin: 20px;
 }
@@ -191,7 +216,7 @@ h1 {
 }
 
 .footer h2 {
-    font-size: 48px;
+    font-size: 36px;
     margin-left: 130px;
 }
 
@@ -200,12 +225,13 @@ h1 {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
+
  #header {
     background-image: url(../img/mv.jpg);
     max-width: 100%;
     height: 300px;
-    background-size: contain;
+    background-size: cover;
  }
 
  .logo {
@@ -217,7 +243,7 @@ h1 {
  }
 
  .list li {
-    font-size: 20px;
+    font-size: 16px;
  }
  .list ul {
     display: block;
@@ -245,7 +271,7 @@ h1 {
 /*ハンバーガーボタン*/
 .bg-btn {
     display: block;
-    width: 230px;
+    width: 70%;
     height: 100px;
     position: fixed;
     z-index: 30;
@@ -342,7 +368,7 @@ h1 {
 
 .title {
     margin: 0 auto;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 .intro {
@@ -359,7 +385,7 @@ h1 {
   }
   
   .slide-item h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .slide-item img {
@@ -384,7 +410,7 @@ h1 {
   }
 
   .name, .text, p span{
-    font-size: 18px;
+    font-size: 16px;
     border: none;
     display: block;
   }
@@ -416,7 +442,11 @@ h1 {
 
   .news-btn {
     max-width: 150px;
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  footer {
+    padding-bottom: 20px;
   }
 
   .footer {
@@ -426,7 +456,7 @@ h1 {
   }
 
   .footer h2 {
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 40px;
     margin-bottom: -20px;
   }
@@ -447,4 +477,6 @@ h1 {
     margin-top: 10px;
     margin-bottom: 20px;
   }
+
+  
 }
