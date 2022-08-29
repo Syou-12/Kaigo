@@ -17,7 +17,7 @@ label {
     font-size: 16px;
     margin-bottom: 10px;
     display: block;
-    margin-left: 100px;
+    margin-left: 30%;
 }
 
 input[type="text"],
@@ -28,30 +28,30 @@ textarea {
 }
 
 input[type="email"] {
-    width: 80%;
-    margin: 0 10%
+    width: 40%;
+    margin: 0 30%
 }
 
 input[type="text"] {
-    width: 80%;
-    margin: 0 10%;
+    width: 40%;
+    margin: 0 30%;
 
 }
 
 textarea {
-    width: 80%;
+    width: 40%;
     height: 385px;
 }
 
 input[type="submit"] {
     border: none;
     cursor: pointer;
-    margin: 0 10%;
+    margin: 0 30%;
 }
 
 #message {
     border: 1px solid #000;
-    margin: 0 10%;
+    margin: 0 30%;
 }
 
 .email {
