@@ -73,3 +73,40 @@ input[type="submit"] {
 .btn:hover {
     opacity: 0.5;
 }
+
+@media screen and (max-width: 767px) {
+
+    h1 {
+        margin: 20% 0;
+        font-size: 30px;
+    }
+
+    label {
+        margin-left: 20%;
+    }
+
+    input[type="email"] {
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    input[type="text"] {
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    textarea {
+        width: 60%;
+        height: 200px;
+    }
+
+    #message {
+        margin: 0 20%;
+    }
+
+    .btn {
+        width: 40%;
+        font-size: 16px;
+        
+    }
+}
