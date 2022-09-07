@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="./js/btn.js"></script>
+    <script src="./js/accordion.js"></script>
 </head>
 
 <body>
@@ -26,13 +27,13 @@
                     </ul>
                 </nav>
             </div>
-            <!--ハンバーガーボタン-->
-            <button class="bg-btn">
-                <span class="bar bar-top"></span>
-                <span class="bar bar-mid"></span>
-                <span class="bar bar-bottom"></span>
-            </button>
         </div>
+        <!--ハンバーガーボタン-->
+        <button class="bg-btn">
+            <span class="bar bar-top"></span>
+            <span class="bar bar-mid"></span>
+            <span class="bar bar-bottom"></span>
+        </button>
     </header>
     <main>
         <div class="mv">
@@ -46,30 +47,34 @@
         </section>
         <section id="news">
             <h2 class="title">施設のお知らせ</h2>
-            <ul class="news-list">
-                <li class="news-item">
-                    <a href="#">
-                        <time class="date" datetime="2020-02-02">2020.02.02</time>
-                        <span class="category">NEWS</span>
-                        <span class="news-title">テキストテキストテキストテキストテキスト</span>
-                    </a>
-                </li>
-                <li class="news-item">
-                    <a href="#">
-                        <time class="date" datetime="2020-02-02">2020.02.02</time>
-                        <span class="category">NEWS</span>
-                        <span class="news-title">テキストテキストテキストテキストテキスト</span>
-                    </a>
-                </li>
-                <li class="news-item">
-                    <a href="#">
-                        <time class="date" datetime="2020-02-02">2020.02.02</time>
-                        <span class="category">NEWS</span>
-                        <span class="news-title">テキストテキストテキストテキストテキスト</span>
-                    </a>
-                </li>
-            </ul>
-            <a class="news-btn" href="#">もっと見る</a>
+            <div class="accordion">
+                <ul class="news-list">
+                    <li class="news-item">
+                        <a href="#">
+                            <time class="date" datetime="2020-02-02">2020.02.02</time>
+                            <span class="category">NEWS</span>
+                            <span class="news-title">テキストテキストテキストテキストテキスト</span>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="#">
+                            <time class="date" datetime="2020-02-02">2020.02.02</time>
+                            <span class="category">NEWS</span>
+                            <span class="news-title">テキストテキストテキストテキストテキスト</span>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="#">
+                            <time class="date" datetime="2020-02-02">2020.02.02</time>
+                            <span class="category">NEWS</span>
+                            <span class="news-title">テキストテキストテキストテキストテキスト</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bt btn-more">もっと見る</div>
+                <div class="bt btn-close">閉じる</div>
+            </div>
+            <a class="news-btn" href="./news.html">お知らせページへ</a>
         </section>
         <section id="intro">
             <h2 class="title">職員紹介</h2>
@@ -109,7 +114,7 @@
             </div>
         </section>
         <div class="inquiry">
-        <a class="in-btn" href="#">お問い合わせ</a>
+            <a class="in-btn" href="#">お問い合わせ</a>
         </div>
     </main>
     <footer>

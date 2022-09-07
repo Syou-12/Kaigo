@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+body {
+    overflow-x: hidden;
+}
 
 /*-- ヘッダー --*/
 
@@ -176,7 +179,7 @@ h1 {
 
 .news-btn {
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0 40%;
     font-size: 30px;
     display: block;
     padding: 5px 15px;
@@ -186,6 +189,18 @@ h1 {
     border: 1px solid #000;
     border-radius: 30px;
 }
+
+.bt {
+    border: 1px solid #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-bottom: 100px;
+  }
 
 /*-- フッター --*/
 footer {

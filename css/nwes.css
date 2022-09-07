@@ -9,6 +9,10 @@ li {
     list-style-type: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*-- ヘッダー --*/
 #header {
     background-image: url(../img/toiawase.jpg);
@@ -97,7 +101,7 @@ li {
 
 .news-btn {
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0 40%;
     font-size: 16px;
     display: block;
     padding: 15px 25px;
@@ -108,9 +112,21 @@ li {
     border-radius: 50px;
 }
 
-.btn:hover {
+.news-btn:hover {
     opacity: 0.5;
 }
+
+.bt {
+    border: 1px solid #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-bottom: 100px;
+  }
 
 /*-- フッター --*/
 
