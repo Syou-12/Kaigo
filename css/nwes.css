@@ -202,7 +202,7 @@ body {
         z-index: 30;
         border: none;
         background-color: transparent;
-        margin-top: -30px;
+        margin-top: -80px;
     }
     
     .bar {
@@ -311,6 +311,11 @@ body {
       .news-btn {
         max-width: 50%;
         font-size: 16px;
+        margin: 10% 30%;
+      }
+
+      .bt {
+        margin: 0 35%;
       }
 
       .footer {

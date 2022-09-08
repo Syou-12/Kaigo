@@ -180,7 +180,7 @@ h1 {
 .news-btn {
     max-width: 300px;
     margin: 0 40%;
-    font-size: 30px;
+    font-size: 16px;
     display: block;
     padding: 5px 15px;
     text-align: center;
@@ -456,8 +456,13 @@ footer {
   }
 
   .news-btn {
-    max-width: 150px;
+    max-width: 180px;
     font-size: 16px;
+    margin: 10% 25%;
+  }
+
+  .bt {
+    margin: 0 35%;
   }
 
   footer {
