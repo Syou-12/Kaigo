@@ -17,6 +17,8 @@ body {
 #header {
     background-image: url(../img/toiawase.jpg);
     background-size: cover;
+    background-position: right 60%;
+    max-width: 100%;
     height: 1200px;
 }
 
@@ -99,42 +101,32 @@ body {
     margin-left: 95px;
 }
 
-.news-btn {
-    max-width: 300px;
-    margin: 0 40%;
-    font-size: 16px;
-    display: block;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border: 1px solid #000;
-    border-radius: 50px;
-}
-
-.news-btn:hover {
-    opacity: 0.5;
-}
-
 .bt {
     border: 1px solid #333;
     cursor: pointer;
     display: inline-block;
+    width: 70%;
     font-size: 18px;
     margin-top: 10px;
     padding: 10px;
-    margin-left: 45%;
-    margin-right: 45%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-bottom: 100px;
+    text-align: center;
   }
 
 /*-- フッター --*/
+
+footer {
+    background: #ccffcc;
+}
 
 .footer {
     display: flex;
     justify-content: space-between;
     margin-top: 430px;
     margin-bottom: 100px;
+    padding-top: 50px;
 }
 
 .footer-list li {
@@ -168,11 +160,15 @@ body {
         background-image: url(../img/toiawase.jpg);
         background-size: cover;
         max-width: 100%;
-        height: 250px;
+        height: 350px;
     }
 
     .top h1 {
         margin-left: 10%;
+    }
+
+    .title h2 {
+        margin-top: 50px;
     }
 
     button {
@@ -307,15 +303,10 @@ body {
       .news-title {
         margin-left: 5px;
       }
-    
-      .news-btn {
-        max-width: 50%;
-        font-size: 16px;
-        margin: 10% 30%;
-      }
 
       .bt {
-        margin: 0 35%;
+        width: 100%;
+        margin: 0 auto;
       }
 
       .footer {
@@ -344,6 +335,6 @@ body {
       .copy {
         font-size: 10px;
         margin-top: 10px;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
       }
 }

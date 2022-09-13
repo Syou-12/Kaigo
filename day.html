@@ -11,17 +11,18 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="./js/btn.js"></script>
     <script src="./js/accordion.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/5-1-5.css">
 </head>
 
 <body>
     <header id="header">
         <div class="top">
-            <h1 class="logo">ロゴ</h1>
+            <h1 class="logo"><a href="#">ロゴ</a></h1>
             <div class="btn">
                 <nav class="list">
                     <ul class="nav-list">
                         <li class="item"><a href="#overview">施設概要</a></li>
-                        <li class="item"><a href="#news">お知らせ</a></li>
+                        <li class="item"><a href="./news.html">お知らせ</a></li>
                         <li class="item"><a href="#intro">職員紹介</a></li>
                         <li class="item"><a href="./contact.html">お問い合わせ</a></li>
                     </ul>
@@ -48,33 +49,32 @@
         <section id="news">
             <h2 class="title">施設のお知らせ</h2>
             <div class="accordion">
-            <ul class="news-list">
-                <li class="news-item">
-                    <a href="#">
-                        <time class="date" datetime="2020-02-02">2020.02.02</time>
-                        <span class="category">NEWS</span>
-                        <span class="news-title">テキストテキストテキストテキストテキスト</span>
-                    </a>
-                </li>
-                <li class="news-item">
-                    <a href="#">
-                        <time class="date" datetime="2020-02-02">2020.02.02</time>
-                        <span class="category">NEWS</span>
-                        <span class="news-title">テキストテキストテキストテキストテキスト</span>
-                    </a>
-                </li>
-                <li class="news-item">
-                    <a href="#">
-                        <time class="date" datetime="2020-02-02">2020.02.02</time>
-                        <span class="category">NEWS</span>
-                        <span class="news-title">テキストテキストテキストテキストテキスト</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="bt btn-more">もっと見る</div>
-            <div class="bt btn-close">閉じる</div>
+                <ul class="news-list">
+                    <li class="news-item">
+                        <a href="#">
+                            <time class="date" datetime="2020-02-02">2020.02.02</time>
+                            <span class="category">NEWS</span>
+                            <span class="news-title">テキストテキストテキストテキストテキスト</span>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="#">
+                            <time class="date" datetime="2020-02-02">2020.02.02</time>
+                            <span class="category">NEWS</span>
+                            <span class="news-title">テキストテキストテキストテキストテキスト</span>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="#">
+                            <time class="date" datetime="2020-02-02">2020.02.02</time>
+                            <span class="category">NEWS</span>
+                            <span class="news-title">テキストテキストテキストテキストテキスト</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bt btn-more">もっと見る</div>
+                <div class="bt btn-close">閉じる</div>
             </div>
-            <a class="news-btn" href="news.html">お知らせページへ</a>
         </section>
         <section id="intro">
             <h2 class="title">職員紹介</h2>
@@ -119,11 +119,11 @@
     </main>
     <footer>
         <div class="footer">
-            <h2 class="footer-logo">ロゴ</h2>
+            <h2 class="footer-logo"><a href="#">ロゴ</a></h2>
             <nav class="footer-list">
                 <ul>
                     <li><a href="#overview">施設概要</a></li>
-                    <li><a href="#news">お知らせ</a></li>
+                    <li><a href="./news.html">お知らせ</a></li>
                     <li><a href="#intro">職員紹介</a></li>
                     <li><a href="contact.html">お問い合わせ</a></li>
                 </ul>
@@ -131,6 +131,9 @@
         </div>
         <p class="copy">&copy;コピーライト</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/sclole-nav.js"></script>
+
 </body>
 
 </html>
